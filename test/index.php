@@ -37,3 +37,16 @@
 // echo $trung;
 // echo $cuc;
 
+class Base{
+    public static function show(){
+        echo "Base::show() called.";
+    }
+}
+class Divine extends Base{
+    public static function show(){
+        echo "Divine::show() called.";
+    }
+}
+Divine::show();
+$divine = new Divine();
+$divine->show();
