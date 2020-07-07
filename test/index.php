@@ -17,6 +17,8 @@
 // $x += ++$x + $y--;
 // echo $x."<br/>";
 // echo $y;
+
+//--------------------------------------------
 // class Name{
 //     public $name;
 //     function __construct($name)
@@ -36,17 +38,45 @@
 // echo $trung->__toString();
 // echo $trung;
 // echo $cuc;
+//-------------------------------------------
+// class Base{
+//     public static function show(){
+//         echo "Base::show() called.";
+//     }
+// }
+// class Divine extends Base{
+//     public static function show(){
+//         echo "Divine::show() called.";
+//     }
+// }
+// Divine::show();
+// $divine = new Divine();
+// $divine->show();
+//--------------------------------------------------------
+// class Base1{
+//     const BASE = 300;
+//     function incre($fator){
+//         self::BASE*$fator;
+//     }
+// }
+// class Div extends Base1{
+//     function incre($fator){
 
-class Base{
-    public static function show(){
-        echo "Base::show() called.";
-    }
-}
-class Divine extends Base{
-    public static function show(){
-        echo "Divine::show() called.";
-    }
-}
-Divine::show();
-$divine = new Divine();
-$divine->show();
+//        return  self::BASE*$fator;
+//     }
+// }
+// $base1 = new Div();
+// echo $base1->incre(3);
+//-------------------------------------------------------
+// $x = 5;
+// $y = 10;
+// function add(){
+//     // global $x, $y;
+//     // $x = $x + $y;
+//     $GLOBALS['z'] = $GLOBALS['x'] + $GLOBALS['y'];
+// }
+// add();
+// echo $x;
+// echo "<br/>";
+// echo $y;
+// echo $z;
