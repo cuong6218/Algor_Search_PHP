@@ -80,3 +80,17 @@
 // echo "<br/>";
 // echo $y;
 // echo $z;
+//------------------------------------------------
+// class Age{
+//     public $name;
+//     function __construct($name)
+//     {
+//         $this->name = $name;
+//     }
+//     function show(){
+        
+//         return "Hello $this->name";
+//     }
+// }
+// $age1 = new Age('Hi');
+// echo $age1->show();
